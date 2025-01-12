@@ -8,12 +8,12 @@
             text-align: center;
         }
         .features-cards {
-            display: flex;
             padding: 40px 0;
+            display: grid;
+            grid-template-columns: repeat(3,300px);   
             justify-content: space-between;
             .features-card {
                 width: 300px;
-                // height: 230px;
                 padding: 15px;
                 display: flex;
                 flex-direction: column;
