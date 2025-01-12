@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,51 @@
 :root {
   --Black: #150C01;
   --MainColor: #DC780B;
+  --LightMainColor: #ff8400;
+  --White: #FFFFFF;
+}
+
+:root {
+  --MainTextStyle: Philosopher;
+  --SecondTextStyle: Roboto;
+}
+
+.main-title__top-text {
+  font-family: var(--SecondTextStyle);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  color: var(--MainColor);
+  padding: 10px 0;
+}
+
+.main-title {
+  font-family: var(--MainTextStyle);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--Black);
+}
+
+.subtitle {
+  font-family: var(--SecondTextStyle);
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 70%;
+}
+
+.main-btn {
+  font-family: var(--SecondTextStyle);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 20px;
+  color: var(--White);
+  background-color: var(--MainColor);
+  border-radius: 5px;
+}
+
+.main-btn:hover {
+  background-color: var(--LightMainColor);
 }
 
 header {
@@ -36,11 +82,147 @@ header .main-header .header-left__links {
 header .main-header .header-left__links .header-logo img {
   width: 44px;
 }
+header .main-header .header-left__links > a:first-child {
+  opacity: 100% !important;
+}
+header .main-header .header-left__links > a {
+  font-family: var(--SecondTextStyle);
+  font-size: 16px;
+  color: #150C01;
+  opacity: 60%;
+  transition: all 0.3s ease;
+}
+header .main-header .header-left__links > a:hover {
+  color: var(--MainColor);
+  opacity: 100%;
+}
+header .main-header .header-left__links > a.active {
+  color: var(--MainColor);
+  opacity: 100%;
+  font-weight: 500;
+}
 
 .home {
-  border: 1px solid orange;
+  padding: 10px 0;
 }
 .home .home-content {
-  border: 2px solid lightgreen;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .home-content .home-text {
+  width: 52%;
+}
+.home .home-content .home-text .main-title {
+  font-size: 48px;
+}
+.home .home-content .home-text .subtitle {
+  padding-top: 35px;
+  font-weight: 500;
+}
+.home .home-content .home-text .home-buttons {
+  display: flex;
+  gap: 20px;
+  padding-top: 35px;
+}
+.home .home-content .home-text .home-buttons .main-btn {
+  background-color: var(--White);
+  color: var(--MainColor);
+  font-weight: 500;
+  border: 1px solid var(--MainColor);
+  transition: all 0.3s ease;
+}
+.home .home-content .home-text .home-buttons .main-btn:hover {
+  background-color: var(--MainColor);
+  color: var(--White);
+  font-weight: 400;
+  border: 1px solid var(--MainColor);
+}
+.home .home-content .home-image {
+  width: 48%;
+  overflow: hidden;
+}
+.home .home-content .home-image img {
+  width: 110%;
+}
+
+.features {
+  padding: 60px 0;
+}
+.features .features-content .main-title__top-text {
+  text-align: center;
+}
+.features .features-content .main-title {
+  text-align: center;
+}
+.features .features-content .features-cards {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-between;
+}
+.features .features-content .features-cards .features-card {
+  width: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.features .features-content .features-cards .features-card .card-icon__box {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features .features-content .features-cards .features-card:nth-child(1) > .card-icon__box {
+  background-color: rgba(143, 166, 50, 0.1137254902);
+}
+.features .features-content .features-cards .features-card:nth-child(2) > .card-icon__box {
+  background-color: rgba(230, 77, 46, 0.1137254902);
+}
+.features .features-content .features-cards .features-card:nth-child(3) > .card-icon__box {
+  background-color: rgba(220, 119, 11, 0.1019607843);
+}
+.features .features-content .features-cards .features-card .card-title {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px 0 12px 0;
+}
+.features .features-content .features-cards .features-card .card-subtitle {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.about {
+  padding: 50px 0;
+}
+.about .about-content {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+}
+.about .about-content .about-image {
+  width: 45%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+}
+.about .about-content .about-image img {
+  width: 145%;
+}
+.about .about-content .about-text {
+  width: 55%;
+  padding-left: 80px;
+}
+.about .about-content .about-text .main-title {
+  width: 90%;
+}
+.about .about-content .about-text .subtitle {
+  padding: 20px 0 40px 0;
+  line-height: 24px;
 }/*# sourceMappingURL=style.css.map */

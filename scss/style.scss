@@ -1,7 +1,19 @@
 @import './base/base';
 
+// _typography fayli uchun
+@import './base/typhography';
+
+// _buttons fayli uchun
+@import './component/buttons';
+
 // Header layout uchun link
 @import './layouts/header';
 
-//Home layout uchun link
+// Home layout uchun link
 @import './layouts/home';
+
+// Features layout uchun link
+@import './layouts/features';
+
+// About layout uchun link
+@import './layouts/about';

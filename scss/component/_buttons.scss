@@ -1,0 +1,12 @@
+.main-btn {
+    font-family: var(--SecondTextStyle);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 20px;
+    color: var(--White);
+    background-color: var(--MainColor);
+    border-radius: 5px;
+}
+.main-btn:hover {
+    background-color: var(--LightMainColor);
+}

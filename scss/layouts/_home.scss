@@ -1,8 +1,43 @@
 .home {
-    border: 1px solid orange;
+    padding: 10px 0;
     .home-content {
-        border: 2px solid lightgreen;
         display: flex;
-
+        align-items: center;
+        justify-content: space-between;
+        .home-text {
+            width: 52%;
+            .main-title {
+                font-size: 48px;
+            }
+            .subtitle {
+                padding-top: 35px;
+                font-weight: 500;
+            }
+            .home-buttons {
+                display: flex;
+                gap: 20px;
+                padding-top: 35px;
+                .main-btn {
+                    background-color: var(--White);
+                    color: var(--MainColor);
+                    font-weight: 500;
+                    border: 1px solid var(--MainColor);
+                    transition: all .3s ease;
+                }
+                .main-btn:hover {
+                    background-color: var(--MainColor);
+                    color: var(--White  );
+                    font-weight: 400;
+                    border: 1px solid var(--MainColor);
+                }
+            }
+        }
+        .home-image {
+            width: 48%;
+            overflow: hidden;
+            img {
+                width: 110%;
+            }
+        }
     }
 }
