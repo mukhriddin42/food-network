@@ -59,3 +59,42 @@
 
     }
 }
+
+// Sayt kengligi 480px gacha bo'lgan devayslarda
+@media (max-width:480px) {
+    .testimonials {
+        .testimonials-content {
+            .main-title__top-text {
+                font-size: 14px;
+            }
+            .testimonials-title {
+                font-size: 22px;
+            }
+            .testimonials-subtitle {
+                font-size: 14px;
+                line-height: 20px   ;
+            }
+            .testimonials-image {
+                width: 85px;
+                height: 85px;
+            }
+            .customer-opinion {
+                width: 90%;
+                font-size: 14px;
+            }
+            .star-score {
+                width:35%;
+            }
+            .customer-name {
+                font-size: 18px;
+            }
+            .customer-profession {
+                text-align: center;
+                padding-top: 10px;
+                font-size: 14px;
+            }
+    
+        }
+    }
+    
+}

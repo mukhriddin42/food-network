@@ -587,6 +587,50 @@ header .main-header .sidebar > a:first-child {
     padding: 35px 0;
   }
 }
+@media (max-width: 480px) {
+  .menu .menu-content .main-title__top-text {
+    font-size: 14px;
+  }
+  .menu .menu-content .menu-section__title {
+    font-size: 22px;
+  }
+  .menu .menu-content .menu-section__subtitle {
+    font-size: 14px;
+  }
+  .menu .menu-content .menu-items {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    justify-content: center;
+  }
+  .menu .menu-content .menu-items .menu-item .item-image {
+    width: 100%;
+    height: 180px;
+  }
+  .menu .menu-content .menu-items .menu-item .food-price {
+    padding: 14px 14px 8px 14px;
+  }
+  .menu .menu-content .menu-items .menu-item .food-price .food-name {
+    font-size: 20px;
+  }
+  .menu .menu-content .menu-items .menu-item .food-price .price {
+    font-size: 20px;
+  }
+  .menu .menu-content .menu-items .menu-item .food-description {
+    padding: 0 14px;
+    line-height: 23px;
+    font-size: 14px;
+  }
+  .menu .menu-content .menu-items .menu-item .item-bottom {
+    padding: 15px 14px;
+  }
+  .menu .menu-content .menu-items .menu-item .item-bottom .add-to {
+    width: 30px;
+    height: 30px;
+  }
+  .menu .menu-content .learn-more {
+    padding: 20px 0;
+  }
+}
 .advertisement {
   padding: 30px 0;
 }
@@ -671,6 +715,25 @@ header .main-header .sidebar > a:first-child {
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .advertisement .advertisement-content .adv-text .main-title__top-text {
+    font-size: 14px;
+  }
+  .advertisement .advertisement-content .adv-text .adv-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .advertisement .advertisement-content .adv-text .adv-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .advertisement .advertisement-content .adv-text .adv-buttons {
+    width: 70%;
+  }
+  .advertisement .advertisement-content .adv-text .main-btn {
+    font-size: 14px;
+  }
+}
 .testimonials {
   padding: 100px 0;
 }
@@ -730,6 +793,37 @@ header .main-header .sidebar > a:first-child {
   padding-top: 10px;
 }
 
+@media (max-width: 480px) {
+  .testimonials .testimonials-content .main-title__top-text {
+    font-size: 14px;
+  }
+  .testimonials .testimonials-content .testimonials-title {
+    font-size: 22px;
+  }
+  .testimonials .testimonials-content .testimonials-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .testimonials .testimonials-content .testimonials-image {
+    width: 85px;
+    height: 85px;
+  }
+  .testimonials .testimonials-content .customer-opinion {
+    width: 90%;
+    font-size: 14px;
+  }
+  .testimonials .testimonials-content .star-score {
+    width: 35%;
+  }
+  .testimonials .testimonials-content .customer-name {
+    font-size: 18px;
+  }
+  .testimonials .testimonials-content .customer-profession {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+}
 .contact {
   background-color: rgba(255, 215, 172, 0.3137254902);
   padding: 80px 0;
@@ -762,6 +856,24 @@ header .main-header .sidebar > a:first-child {
 @media (max-width: 600px) {
   .contact .contact-content .input-box input {
     width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .contact .contact-content .main-title__top-text {
+    font-size: 14px;
+  }
+  .contact .contact-content .contact-title {
+    font-size: 22px;
+  }
+  .contact .contact-content .input-box {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact-content .input-box input {
+    width: 250px;
+    font-size: 14px;
   }
 }
 footer {
@@ -833,10 +945,31 @@ footer .footer-content table tr .footer-icons .footer-icon:hover {
     padding: 100px 0;
     background-color: #252525;
   }
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
   footer .footer-content table tr th:first-child {
     display: none;
   }
   footer .footer-content table tr td:first-child {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  footer {
+    padding: 100px 0;
+    background-color: #252525;
+  }
+  footer .footer-content {
+    gap: 70px;
+  }
+  footer .footer-content table tr th:nth-child(1),
+  footer .footer-content table tr th:nth-child(2) {
+    display: none;
+  }
+  footer .footer-content table tr td:nth-child(1),
+  footer .footer-content table tr td:nth-child(2) {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

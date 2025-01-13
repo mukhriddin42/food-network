@@ -42,5 +42,28 @@
             }
         }
     }
-        
+}
+
+// Sayt kengligi 480px gacha bo'lgan devayslarda
+@media (max-width:480px) {
+    .contact {
+        .contact-content {
+            .main-title__top-text {
+                font-size: 14px;
+            }
+            .contact-title {
+                font-size: 22px;
+            }
+            .input-box {
+                padding-top: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input {
+                    width: 250px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }

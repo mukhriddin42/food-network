@@ -74,6 +74,8 @@ footer {
         padding: 100px 0;
         background-color: #252525;
         .footer-content {
+            display: flex;
+            justify-content: space-between;
             table {    
                 tr {
                     th:first-child {
@@ -86,4 +88,27 @@ footer {
             }
         }
     }   
+}
+
+// Sayt kengligi 480px gacha bo'lgan devayslarda
+@media (max-width:480px) {
+    footer {
+        padding: 100px 0;
+        background-color: #252525;
+        .footer-content {
+            gap: 70px;
+            table {    
+                tr { 
+                    th:nth-child(1),
+                    th:nth-child(2) {
+                        display: none;
+                    }
+                    td:nth-child(1),
+                    td:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    } 
 }
