@@ -106,7 +106,11 @@
                     line-height: 20px;
                 }
                 .adv-buttons {
-                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    width: 35%;
+                    text-align: center;
+                    gap: 15px;
                 }
                 .main-btn {
                     font-size: 14px;

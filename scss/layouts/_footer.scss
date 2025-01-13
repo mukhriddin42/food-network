@@ -96,7 +96,10 @@ footer {
         padding: 100px 0;
         background-color: #252525;
         .footer-content {
-            gap: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
             table {    
                 tr { 
                     th:nth-child(1),

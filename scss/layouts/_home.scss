@@ -107,9 +107,13 @@
                 .home-buttons {
                     width: 60%;
                     display: flex;
+                    flex-direction: column;
                     justify-content: space-between;
+                    width: 30%;
                     .main-btn {
-                        font-size: 13px;
+                        font-size: .8em;
+                        text-align: center;
+                        padding: .5em .7em;
                     }
                 }
             }
