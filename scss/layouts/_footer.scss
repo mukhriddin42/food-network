@@ -112,3 +112,29 @@ footer {
         }
     } 
 }
+
+// Sayt kengligi 320px gacha bo'lgan devayslarda
+@media (max-width:320px) {
+    footer {
+        padding: 100px 0;
+        background-color: #252525;
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            table {    
+                tr { 
+                    th:nth-child(1),
+                    th:nth-child(2) {
+                        display: none;
+                    }
+                    td:nth-child(1),
+                    td:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    } 
+}

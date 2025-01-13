@@ -269,6 +269,21 @@ header .main-header .sidebar > a:first-child {
     display: none;
   }
 }
+@media (max-width: 320px) {
+  .home .home-content .home-text .home-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+  }
+  .home .home-content .home-text .home-buttons .main-btn {
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 13px;
+  }
+  .home .home-content .home-image {
+    display: none;
+  }
+}
 .features {
   padding: 60px 0;
 }
@@ -471,6 +486,25 @@ header .main-header .sidebar > a:first-child {
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 50px;
+  }
+}
+@media (max-width: 320px) {
+  .about .about-content .about-image {
+    display: none;
+  }
+  .about .about-content .about-text .main-title__top-text {
+    font-size: 14px;
+  }
+  .about .about-content .about-text .main-title {
+    font-size: 22px;
+  }
+  .about .about-content .about-text .subtitle {
+    font-size: 14px;
+  }
+  .about .about-content .about-text .read-more-btn {
+    font-size: 14px;
+    width: 55%;
+    text-align: center;
   }
 }
 .menu {
@@ -734,6 +768,28 @@ header .main-header .sidebar > a:first-child {
     font-size: 14px;
   }
 }
+@media (max-width: 320px) {
+  .advertisement .advertisement-content .adv-text .main-title__top-text {
+    font-size: 14px;
+  }
+  .advertisement .advertisement-content .adv-text .adv-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .advertisement .advertisement-content .adv-text .adv-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .advertisement .advertisement-content .adv-text .adv-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    gap: 15px;
+  }
+  .advertisement .advertisement-content .adv-text .main-btn {
+    font-size: 14px;
+  }
+}
 .testimonials {
   padding: 100px 0;
 }
@@ -963,6 +1019,26 @@ footer .footer-content table tr .footer-icons .footer-icon:hover {
   }
   footer .footer-content {
     gap: 70px;
+  }
+  footer .footer-content table tr th:nth-child(1),
+  footer .footer-content table tr th:nth-child(2) {
+    display: none;
+  }
+  footer .footer-content table tr td:nth-child(1),
+  footer .footer-content table tr td:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  footer {
+    padding: 100px 0;
+    background-color: #252525;
+  }
+  footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
   }
   footer .footer-content table tr th:nth-child(1),
   footer .footer-content table tr th:nth-child(2) {

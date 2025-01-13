@@ -115,3 +115,33 @@
         }
     } 
 }
+
+// Sayt kengligi 320px gacha bo'lgan devayslarda
+@media (max-width:320px) {
+    .advertisement {
+        .advertisement-content {
+            .adv-text {
+                .main-title__top-text {
+                    font-size: 14px;
+                }
+                .adv-title {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+                .adv-subtitle {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                .adv-buttons {
+                    display: flex;
+                    flex-direction: column;
+                    width: 47%;
+                    gap: 15px;
+                }
+                .main-btn {
+                    font-size: 14px;
+                }
+            }
+        }
+    } 
+}
