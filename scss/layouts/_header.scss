@@ -1,5 +1,9 @@
 header {
-    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    background-color: var(--White);
+    z-index: 60;
+    padding: 12px 0;
     .main-header {
         width: 100%;
         height: 46px;
@@ -35,7 +39,57 @@ header {
                 opacity: 100%;
                 font-weight: 500;
             }
+        }
+        .bar-menu {
+            display: none;
+            cursor: pointer;
+            transition: all .3s;
+            font-size-adjust: 24px;
+            &:hover {
+                color: var(--MainColor);
+            }
+        }
+        .sidebar {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 15px;
+            padding-top: 20px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 250px;
+            z-index: 888;
+            backdrop-filter: blur(10px);
+            background-color: #ffffff45;
+            box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+            & > a {
+                margin-left: 30px;
+            }
+            & > a:first-child {
+                font-size: 24px;
+            }
+        }
+    }
+}
 
+// Sayt kengligi 992px gacha bo'lgan ekranlarda
+@media (max-width:992px) {
+
+}
+
+// Sayt kengligi 768px gacha bo'lgan ekranlarda
+@media (max-width:768px) {
+    .hideOnMobile {
+        display: none;
+    }
+    header {
+        .main-header {
+            .bar-menu {
+                display: inline-block;
+            }
         }
     }
 }
