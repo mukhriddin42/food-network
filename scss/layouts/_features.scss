@@ -54,3 +54,63 @@
         }
     }
 }
+
+
+// Sayt kengligi 768px gacha bo'lgan devayslarda
+@media (max-width:768px) {
+    .features {
+        .features-content {
+            .main-title__top-text {
+                font-size: 14px;
+            }
+            .features-cards {
+                grid-template-columns: repeat(3,1fr);   
+                .features-card {
+                    width: 200px;
+                    .card-title {
+                        font-size: 22px;
+                    }
+                    .card-subtitle {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Sayt kengligi 600px gacha bo'lgan devayslarda
+@media (max-width:600px) {
+    .features {
+        .features-content {
+            .features-cards {
+                display: grid;
+                grid-template-columns: repeat(1, auto); 
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+
+// Sayt kengligi 480px gacha bo'lgan devayslarda
+@media (max-width:480px) {
+    .features {
+        .features-content {
+            .main-title__top-text {
+                font-size: 14px;
+            }
+            .main-title {
+                font-size: 22px;
+            }
+            .features-cards {
+                display: grid;
+                grid-template-columns: repeat(1, auto); 
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+    }
+}

@@ -99,3 +99,35 @@
         }
     }
 }
+
+
+// Sayt kengligi 768px gacha bo'lgan devayslarda
+@media (max-width:768px){
+    .menu {
+        padding: 30px 0;
+        .menu-content {
+            .menu-items {
+                grid-template-columns: repeat(2, 340px);
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+
+// Sayt kengligi 600px gacha bo'lgan devayslarda
+@media (max-width:600px) {
+    .menu {
+        padding: 30px 0;
+        .menu-content {
+            .menu-items {
+                grid-template-columns: repeat(1, 340px);
+                justify-content: center;
+                gap: 40px;
+            }
+            .learn-more {
+                padding: 35px 0;
+            }
+        }
+    }
+}

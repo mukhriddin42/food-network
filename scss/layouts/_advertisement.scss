@@ -48,3 +48,42 @@
         }
     }
 }
+
+
+// Sayt kengligi 600px gacha bo'lgan devayslarda
+@media (max-width:600px) {
+    .advertisement {
+        padding: 30px 0;
+        .advertisement-content {
+            .adv-text {
+                width: 100%;
+                position: relative;
+                .main-title__top-text {
+                    text-align: center;
+                }
+                .adv-title {
+                    width: 70%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                .adv-subtitle {
+                    width: 85%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                .adv-buttons {
+                    width: 55%;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 0;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            .adv-image {
+                display: none;
+            }
+        }
+    }   
+}

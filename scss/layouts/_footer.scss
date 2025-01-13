@@ -66,3 +66,24 @@ footer {
         }
     }
 }
+
+
+// Sayt kengligi 600px gacha bo'lgan devayslarda
+@media (max-width:600px) {
+    footer {
+        padding: 100px 0;
+        background-color: #252525;
+        .footer-content {
+            table {    
+                tr {
+                    th:first-child {
+                        display: none;
+                    }
+                    td:first-child {
+                        display: none;
+                    }  
+                }
+            }
+        }
+    }   
+}

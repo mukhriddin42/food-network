@@ -39,3 +39,11 @@ html {
         max-width: 720px;
     }
 }
+
+
+// Sayt kengligi 480px gacha bo'lgan devayslarda
+@media (max-width:480px) {
+    .container {
+        max-width: 450px;
+    }
+}

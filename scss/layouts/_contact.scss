@@ -28,3 +28,19 @@
         }
     }
 }
+
+
+
+// Sayt kengligi 600px gacha bo'lgan devayslarda
+@media (max-width:600px) {
+    .contact {
+        .contact-content {
+            .input-box {
+                input {
+                    width: 400px;
+                }
+            }
+        }
+    }
+        
+}

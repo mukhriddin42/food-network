@@ -41,3 +41,81 @@
         }
     }
 }
+
+// Sayt kengligi 768px gacha bo'lgan ekranlarda
+@media (max-width:768px) {
+    .home {
+        .home-content {
+            .home-text {
+                width: 52%;
+                .main-title {
+                    font-size: 36px;
+                }
+                .subtitle {
+                    padding-top: 20px;
+                    font-weight: 400;
+                }
+                .home-buttons {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+// Sayt kengligi 600px gacha bo'lgan devayslarda
+@media (max-width:600px) {
+    .home {
+        .home-content {
+            .home-text {
+                width: 100%;
+                padding-top: 50px;
+                .main-title {
+                    text-align: center;
+                }
+                .subtitle {
+                    text-align: center;
+                }
+                .home-buttons {
+                    width: 49%;
+                    margin: 0 auto;
+                }
+            }
+            .home-image {
+                display: none;
+            }
+        }
+    }
+}
+
+// Sayt kengligi 480px gacha bo'lgan devayslarda
+@media (max-width:480px) {
+    .home {
+        .home-content {
+            .home-text {
+                width: 100%;
+                padding-top: 50px;
+                .main-title {
+                    text-align: center;
+                    font-size: 22px;
+                }
+                .subtitle {
+                    text-align: center;
+                    font-size: 14px;
+                }
+                .home-buttons {
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-between;
+                    .main-btn {
+                        font-size: 13px;
+                    }
+                }
+            }
+            .home-image {
+                display: none;
+            }
+        }
+    }
+}
