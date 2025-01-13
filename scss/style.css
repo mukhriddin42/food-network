@@ -880,6 +880,11 @@ header .main-header .sidebar > a:first-child {
     font-size: 14px;
   }
 }
+@media (max-width: 320px) {
+  .testimonials .testimonials-content .star-score {
+    width: 40%;
+  }
+}
 .contact {
   background-color: rgba(255, 215, 172, 0.3137254902);
   padding: 80px 0;

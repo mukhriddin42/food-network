@@ -96,5 +96,15 @@
     
         }
     }
-    
+}
+
+// Sayt kengligi 320px gacha bo'lgan devayslarda
+@media (max-width:320px) {
+    .testimonials {
+        .testimonials-content {
+            .star-score {
+                width:40%;
+            }    
+        }
+    }
 }
